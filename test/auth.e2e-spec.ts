@@ -16,7 +16,7 @@ describe('Authentication System', () => {
   });
 
   it('handles a signup request', () => {
-    const email = 'asdkjl.com';
+    const email = 'asdkjl@akliia.com';
     return request(app.getHttpServer())
       .post('/auth/signup')
       .send({ email, password: 'asdf' })
